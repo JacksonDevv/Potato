@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="style.css">
+
+<title>Cardápio Potato</title>
+</head>
+<body>
+
+<nav class="barra-navegacao">
+
+    <button class="botao-hamburguer" id="botaoHamburguer">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+    </button>
+
+    <div class="icones-navegacao">
+        <i data-lucide="search" id="iconeBusca"></i>
+        <i data-lucide="user"></i>
+
+        <div class="icone-carrinho" id="iconeCarrinho">
+            <i data-lucide="shopping-bag"></i>
+            <span class="contador-carrinho" id="contadorCarrinho">0</span>
+        </div>
+    </div>
+
+</nav>
+
+<div class="campo-busca" id="campoBusca">
+    <input type="text" id="entradaBusca" placeholder="Buscar no site...">
+</div>
+
+<div class="menu-deslizante" id="menuDeslizante">
+    <ul class="lista-navegacao">
+        <li><a href="#">Combos</a></li>
+        <li><a href="#">Batatas 500Gr</a></li>
+        <li><a href="#">Bebidas</a></li>
+        <li><a href="#">Sobremesas</a></li>
+        <li><a href="#">FeedBacks</a></li>
+    </ul>
+</div>
+
+<div class="mini-carrinho" id="miniCarrinho">
+    <h3>Seu Carrinho</h3>
+    <ul id="listaCarrinho"></ul>
+</div>
+
+<div class="principal">
+    <img src="./assets/LOGO BATATA POTATO.jpg" alt="logo-batata">
+</div>
+
+
+<script src="script.js"></script>
+<script>lucide.createIcons();</script>
+
+</body>
+</html>
