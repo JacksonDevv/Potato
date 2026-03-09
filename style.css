@@ -9,10 +9,6 @@ body{
     background:#000000;
 }
 
-/* ============================= */
-/* BARRA SUPERIOR */
-/* ============================= */
-
 .barra-navegacao{
     background:#2e2d2d;
     height:55px;
@@ -23,10 +19,6 @@ body{
     position:relative;
     z-index:1000;
 }
-
-/* ============================= */
-/* BOTÃO HAMBURGUER */
-/* ============================= */
 
 .botao-hamburguer{
     display:flex;
@@ -44,7 +36,6 @@ body{
     transition:.3s;
 }
 
-/* ANIMAÇÃO X */
 .botao-hamburguer.ativo .linha:nth-child(1){
     transform:rotate(45deg) translate(5px,5px);
 }
@@ -56,10 +47,6 @@ body{
 .botao-hamburguer.ativo .linha:nth-child(3){
     transform:rotate(-45deg) translate(6px,-6px);
 }
-
-/* ============================= */
-/* ÍCONES SUPERIORES */
-/* ============================= */
 
 .icones-navegacao{
     display:flex;
@@ -78,10 +65,6 @@ body{
 .icones-navegacao svg:hover{
     transform:scale(1.1);
 }
-
-/* ============================= */
-/* CARRINHO */
-/* ============================= */
 
 .icone-carrinho{
     position:relative;
@@ -104,15 +87,11 @@ body{
     justify-content:center;
 }
 
-/* ============================= */
-/* MENU DESLIZANTE LATERAL */
-/* ============================= */
-
 .menu-deslizante{
     position:fixed;
     top:55px;
-    left:-100%; /* começa escondido fora da tela */
-    width:80%; /* ocupa metade da tela */
+    left:-100%;
+    width:80%;
     height:calc(100vh - 55px);
     background:linear-gradient(180deg,#e98f11,#e4d604);
     backdrop-filter:blur(8px);
@@ -127,12 +106,8 @@ body{
 
 
 .menu-deslizante.ativo{
-    left:0; /* desliza para dentro */
+    left:0;
 }
-
-/* ============================= */
-/* LISTA DE NAVEGAÇÃO */
-/* ============================= */
 
 .lista-navegacao{
     width:100%;
@@ -163,10 +138,6 @@ body{
     transform:scale(1.03);
 }
 
-/* ============================= */
-/* CAMPO DE BUSCA */
-/* ============================= */
-
 .campo-busca{
     position:fixed;
     top:-60px;
@@ -191,10 +162,6 @@ body{
     font-size:14px;
 }
 
-/* ============================= */
-/* MINI CARRINHO */
-/* ============================= */
-
 .mini-carrinho{
     position:fixed;
     bottom:-100%;
@@ -215,7 +182,6 @@ body{
     bottom:0;
 }
 
-
 .principal img{
     width: 300px;
     display: flex;
@@ -223,4 +189,49 @@ body{
     align-items: center;
     margin-top: 30px;
     margin-left: 40px;
+}
+
+
+
+.apresentacao{
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    margin:5px auto;
+    font-size:22px;  
+    margin-bottom: 30px; 
+}
+
+.apresentacao h1{
+    color: #FFC107;
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+.inicio{
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    margin:5px auto;
+    font-size:22px;
+}
+
+
+.img-grid img{
+    width: 170px;
+}
+
+.img-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.img-grid h2{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
