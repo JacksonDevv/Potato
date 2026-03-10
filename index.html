@@ -3,16 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <script src="https://unpkg.com/lucide@latest"></script>
 <link rel="stylesheet" href="style.css">
-
 <title>Cardápio Potato</title>
 </head>
 <body>
 
 <nav class="barra-navegacao">
-
     <button class="botao-hamburguer" id="botaoHamburguer">
         <span class="linha"></span>
         <span class="linha"></span>
@@ -22,13 +19,11 @@
     <div class="icones-navegacao">
         <i data-lucide="search" id="iconeBusca"></i>
         <i data-lucide="user"></i>
-
         <div class="icone-carrinho" id="iconeCarrinho">
             <i data-lucide="shopping-bag"></i>
             <span class="contador-carrinho" id="contadorCarrinho">0</span>
         </div>
     </div>
-
 </nav>
 
 <div class="campo-busca" id="campoBusca">
@@ -45,57 +40,93 @@
     </ul>
 </div>
 
-
 <div class="mini-carrinho" id="miniCarrinho">
     <h3>Seu Carrinho</h3>
     <ul id="listaCarrinho"></ul>
 </div>
 
 <main class="container">
-<div class="principal">
-    <img src="./assets/LOGO BATATA POTATO.jpg" alt="logo-batata">
-</div>
+    <div class="principal">
+        <img src="./assets/LOGO BATATA POTATO.jpg" alt="logo-batata">
+    </div>
 
-
-
-<section class="apresentacao">
-    <p>Sejam muito bem-vindos à</p>
-    <h1><span>BATATA POTATO</span></h1>
-    <p class="text">Aqui as batatas são todas preparadas na hora, com ingredientes selecionados de ótima qualidade e aquele sabor que faz você querer pedir de novo.</p>
-</section>
+    <section class="apresentacao">
+        <p>Sejam muito bem-vindos à</p>
+        <h1><span>BATATA POTATO</span></h1>
+        <p class="text">Aqui as batatas são todas preparadas na hora, com ingredientes selecionados de ótima qualidade e aquele sabor que faz você querer pedir de novo.</p>
+    </section>
 </main>
 
 <div class="inicio">
     <h2>Nosso Cardápio</h2>
 </div>
 
-
 <section class="img-grid">
-    <div>
-    <img src="./assets/carne.png" alt="pote1">
-    <h2>Strogonoff de <br>Carne</h2>
-    </div>
-    <div>
-    <img src="./assets/frangoo.png" alt="pote2">
-    <h2>Strogonoff de Frango</h2>
-    </div>
-    <div>
-    <img src="./assets/franbacon.png" alt="pote3">
-    <h2>Franbacon</h2>
-    </div>
-    <div>
-    <img src="./assets/brocolis.png" alt="pote4">
-    <h2>Brócolis</h2>
-    </div>
-    <div>
-    <img src="./assets/hotdog.png" alt="pote5">
-    <h2>Hot-Dog</h2>
-    </div>
-    <div>
-    <img src="./assets/carne.png" alt="pote6">
-    <h2>Carne Seca ao Molho Branco</h2>
+    <div class="card">
+        <div class="card-header">
+            <img src="./assets/carne.png" alt="Strogonoff de Carne">
+            <h2>Strogonoff de Carne</h2>
+        </div>
+        <div class="card-body">
+            <p>Uma verdadeira explosão de sabor em cada colherada! Nossa Batata Recheada no Pote de Strogonoff de Carne vem com 500g de puro sabor.</p>
+            <span class="preco">R$ 29,99</span>
+        </div>
     </div>
 
+    <div class="card">
+        <div class="card-header">
+            <img src="./assets/frangoo.png" alt="Strogonoff de Frango">
+            <h2>Strogonoff de Frango</h2>
+        </div>
+        <div class="card-body">
+            <p>Deliciosa batata recheada com strogonoff de frango cremoso, com batata palha crocante, separada para não murchar.</p>
+            <span class="preco">R$ 27,99</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="./assets/franbacon.png" alt="Franbacon">
+            <h2>Franbacon</h2>
+        </div>
+        <div class="card-body">
+            <p>A combinação perfeita de frango desfiado com bacon crocante e um toque especial de requeijão cremoso.</p>
+            <span class="preco">R$ 28,99</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="./assets/brocolis.png" alt="Brócolis">
+            <h2>Brócolis</h2>
+        </div>
+        <div class="card-body">
+            <p>Opção leve e saborosa com brócolis selecionados, queijo derretido e tempero exclusivo Batata Potato.</p>
+            <span class="preco">R$ 26,99</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="./assets/hotdog.png" alt="Hot-Dog">
+            <h2>Hot-Dog</h2>
+        </div>
+        <div class="card-body">
+            <p>Inovação que você vai amar: batata recheada com os melhores ingredientes de um hot dog tradicional premium.</p>
+            <span class="preco">R$ 25,99</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="./assets/carne.png" alt="Carne Seca">
+            <h2>Carne Seca ao Molho Branco</h2>
+        </div>
+        <div class="card-body">
+            <p>Sabor marcante da carne seca desfiada com a suavidade do nosso molho branco artesanal.</p>
+            <span class="preco">R$ 31,99</span>
+        </div>
+    </div>
 </section>
 
 <script src="script.js"></script>
