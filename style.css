@@ -228,11 +228,11 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     padding: 15px;
-    background-color: #f9f5efd3;
+    background-color: #dbd5cbd3;
 }
 
 .card {
-    background: #fff;
+    background: #efeee3;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -247,7 +247,7 @@ body {
 
 .card-header img {
     width: 100%;
-    height: 230px;
+    height: 210px;
     object-fit: cover;
     display: block;
 }
@@ -261,7 +261,8 @@ body {
     color: #fff;
     font-size: 18px;
     padding: 5px;
-    text-align: left;
+    text-align: center;
+    font-weight: 700;
 }
 
 .card-body {
@@ -281,6 +282,7 @@ body {
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    font-weight: bold;
 }
 
 .preco {
